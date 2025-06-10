@@ -23,7 +23,7 @@ class Config(object):
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
     OWNER_ID = int(os.environ.get("OWNER_ID", "1297756950"))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002540708257"))
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
     WEBHOOK = True  # Don't change this
     PORT = int(os.environ.get("PORT", 8000))
